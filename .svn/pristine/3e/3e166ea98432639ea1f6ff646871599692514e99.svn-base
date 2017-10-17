@@ -1,0 +1,29 @@
+package model;
+
+//import util.Dispatcher;
+import util.IDispatcher;
+
+/**
+ * Interface that represents commands sent through the dispatcher to process the balls
+ */
+public interface IBallCmd {
+//	public abstract void apply(Ball context, Dispatcher disp);
+	
+	public abstract void apply(Ball context, IDispatcher<IBallCmd> dispatcher);
+
+	/**
+	 * No-op "null" adapter
+	 */
+	public static final IBallCmd NULL_OBJECT = new IBallCmd() {
+//		public void apply(Ball context, Dispatcher disp) {
+//		}
+
+		@Override
+		public void apply(Ball context, IDispatcher<IBallCmd> dispatcher) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	};
+
+}

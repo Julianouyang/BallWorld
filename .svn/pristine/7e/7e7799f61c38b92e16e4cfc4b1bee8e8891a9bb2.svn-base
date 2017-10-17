@@ -1,0 +1,44 @@
+package model.strategy;
+
+import java.awt.Point;
+
+import model.*;
+import util.Dispatcher;
+import util.IDispatcher;
+
+/**
+ * The curve strategy class.
+ */
+public class Curve<TDispMsg> implements IUpdateStrategy<TDispMsg> {
+
+	/**
+	 * this defines the speed to changing velocity directions,
+	 * which will determine the radius of the circular motion.
+	 */
+	private final double _theta = Math.PI / 10;
+	/**
+	 * stored cos(_theta)
+	 */
+	private double cosA = Math.cos(_theta);
+	/**
+	 * stored sin(_theta)
+	 */
+	private double sinA = Math.sin(_theta);
+
+	/**
+	 * Change the velocity of the ball to a curve
+	 */
+	@Override
+	public void updateState(Ball context, IDispatcher<TDispMsg> dispatcher) {
+		int vx = (int) Math.round(context.getVelocity().x * cosA - context.getVelocity().y * sinA);
+		int vy = (int) Math.round(context.getVelocity().y * cosA + context.getVelocity().x * sinA);
+		context.setVelocity(new Point(vx, vy));
+	}
+
+	@Override
+	public void init(Ball context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

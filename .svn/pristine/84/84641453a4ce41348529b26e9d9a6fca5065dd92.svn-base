@@ -1,0 +1,44 @@
+HW05: Command-dispatching BallWorld with Inter-ball Interactions
+
+Team members: Julian Ouyang, Dapeng Shan
+
+This composition-based BallWorld demonstrates the ability of composition-based systems to add dynamically modifiable behaviors to a system.
+
+1. Type the name of a update strategy into the text field on the left.  See the list below for the available strategies.  
+2. Clicking the "Add to Lists" button will then add it to both the drop lists.
+3. "Make Selected Ball" will make a ball with the strategy selected on the top drop list.
+4. "Combine!" will dynamically create a strategy that is the combination of the strategies selected on top and bottom lists. 
+5. The new strategy is placed back into both drop lists and can be used again for combining. For instance, add then combine "Curve" and "Breathing" to make a ball that curves and breathes.
+6. "Make Switcher" will make a ball, initially, ones that go straight.  
+7. Clicking "Switch!" will cause all Switcher balls ever made to switch behaviors to whatever is the selected strategy on the top drop list. 
+8. Switcher balls made later will have the same behavior as whatever the previously made Switchers have.
+9. Type the name of a paint strategy into the text field on the left.  See the list below for the available strategies. 
+10. Clicking the "Add" button will then add it to both the drop lists.
+11. This additional function can change the original ball shape into more complicated painting. 
+
+If you hold the mouse over any button, a tooltip will pop up that will tell you what that button does.
+
+
+The following different types of strategies are available for use:
+
+1. Straight
+2. Curve
+3. Color
+4. Wander
+5. Collide
+6. Kill
+7. Eat
+8. Lazer
+9. ChangeColor
+10.ChangeToFish
+
+However, strategies 6-10 should only be available to collide balls.
+
+The following paint strategies are available for use:
+
+1. Ball(Simple geometric shape with affine transformation)
+2. Square(Non-affine transform-based paint strategy)
+3. Ellipse(Simple geometric shape with affine transformation)
+4. NiceFish(Composite shape that stays upright)
+5. SoccerImage(Image)
+6. PlanetImage(Image)

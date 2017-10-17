@@ -1,0 +1,19 @@
+package model;
+
+import util.Dispatcher;
+
+/**
+ * Interface that represents commands sent through the dispatcher to process the balls
+ */
+public interface IBallCmd {
+	public abstract void apply(Ball context, Dispatcher disp);
+
+	/**
+	 * No-op "null" adapter
+	 */
+	public static final IBallCmd NULL_OBJECT = new IBallCmd() {
+		public void apply(Ball context, Dispatcher disp) {
+		}
+	};
+
+}

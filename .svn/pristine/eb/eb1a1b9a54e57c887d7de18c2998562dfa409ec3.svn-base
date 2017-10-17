@@ -1,0 +1,58 @@
+package view;
+
+/**
+ * Adapter that the view uses to communicate to the model for non-repetitive control tasks such as manipulating strategies.
+ * @param TDropListItem  The type of the items put on the update strategy drop lists
+ * @param TPaintDropListItem The type of the items put on the paint strategy drop lists.
+ *
+ */
+public interface IView2ModelControlAdapter<TStrategyDropListItem, TPaintDropListItem> {
+
+	/**
+	 * clear all balls.
+	 */
+	public void clearAllBalls();
+
+	/**
+	 * Take the given short strategy name and return a corresponding something to put onto both drop lists.
+	 * @param classname  The shortened class name of the desired strategy
+	 * @return Something to put onto both the drop lists.
+	 */
+	public TStrategyDropListItem addStrategy(String classname);
+
+	/**
+	 * Make a ball with the selected short update and paint strategy names.
+	 * @param selectedItem1  A shorten class name for the desired update strategy
+	 * @param selectedItem2  A shorten class name for the desired paint strategy
+	 */
+	public void loadBall(TStrategyDropListItem selectedItem1, TPaintDropListItem selectedItem2);
+
+	/**
+	 * Return a new object to put on both lists, given two items from the lists.
+	 * @param selectedItem1  An object from one drop list
+	 * @param selectedItem2 An object from the other drop list
+	 * @return An object to put back on both lists.
+	 */
+	public TStrategyDropListItem combineStrategies(TStrategyDropListItem selectedItem1,
+			TStrategyDropListItem selectedItem2);
+
+	/**
+	 * Make a switcher ball
+	 * @param selectedItem the selected paint strategy
+	 */
+	public void makeSwitcherBall(TPaintDropListItem selectedItem);
+
+	/**
+	 * Switch the switcher strategy's decoree to the strategy denoted by the given item
+	 * @param selectedItem An object from the top drop list to use as the new switcher decoree
+	 */
+	public void switchStrategy(TStrategyDropListItem selectedItem);
+
+	/**
+	 * Converts a paint strategy's class name in the form of a string, into an object that can be placed onto the paint strategy drop list
+	 * @param text The text from the user's input (text field)
+	 * @return An object to put onto the paint strategy drop list.
+	 */
+	public TPaintDropListItem addPaintStrategy(String text);
+
+}

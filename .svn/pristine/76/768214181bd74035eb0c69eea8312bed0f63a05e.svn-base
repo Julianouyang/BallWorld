@@ -1,0 +1,56 @@
+package model.paint;
+
+import java.awt.Graphics;
+import java.awt.geom.AffineTransform;
+
+import model.Ball;
+
+/**
+ * Abstract class that provides default behavior for subclasses that will decorate another IPaintStrategy to add functionality to that strategy. 
+ *
+ */
+public abstract class ADecoratorPaintStrategy extends APaintStrategy {
+
+	/**
+	 * The "decoree" paint strategy whose methods are being augmented by this decorator paint strategy.
+	 */
+	private APaintStrategy decoree;
+
+	/**
+	 * Constructor that takes the decoree paint strategy
+	 * @param _decoree The paint strategy that is to be decorated
+	 */
+	public ADecoratorPaintStrategy(APaintStrategy _decoree) {
+		super(new AffineTransform());
+		decoree = _decoree;
+	}
+
+	/**
+	 * Default behavior is to simply delegate to the decoree's init method
+	 * @param The host Ball which is passed to the decoree.
+	 */
+	public void init(Ball host) {
+	}
+
+	/**
+	 * Default behavior is to simply delegate to the decoree's paint method
+	 * @param g The graphics context which is passed to the decoree
+	 * @param host The host Ball which is passed to the decoree
+	 */
+	public void paint(Graphics g, Ball host) {
+		decoree.paint(g, host);
+	}
+
+	/**
+	 * Default behavior is to simply delegate to the decoree's paintXfrm method
+	 * @param g The graphics context which is passed to the decoree
+	 * @param host The host Ball which is passed to the decoree.
+	 * @param at The affine transform which is passed to the decoree.
+	 */
+	@Override
+	public void paintXfrm(Graphics g, Ball host, AffineTransform at) {
+		// TODO Auto-generated method stub
+		decoree.paintXfrm(g, host, at);
+	}
+
+}

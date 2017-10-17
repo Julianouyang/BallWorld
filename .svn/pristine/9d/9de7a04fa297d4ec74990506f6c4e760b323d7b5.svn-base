@@ -1,0 +1,11 @@
+package model.strategy.interact;
+
+import model.Ball;
+import model.IBallCmd;
+import util.IDispatcher;
+
+public interface IInteractStrategy {
+	public void interact(Ball context, Ball target, IDispatcher<IBallCmd> disp);
+	
+	public static final IInteractStrategy NULL_STRATEGY = (context, target, disp) ->{};
+}

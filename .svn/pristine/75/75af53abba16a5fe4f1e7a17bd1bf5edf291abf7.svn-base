@@ -1,0 +1,13 @@
+package util;
+
+import java.util.Collection;
+import java.util.concurrent.CopyOnWriteArraySet;
+
+public abstract class ASetDispatcher<TDispMsg> extends ACollectionDispatcher<TDispMsg> {
+
+	public ASetDispatcher() {
+		super(new CopyOnWriteArraySet<>());
+		// TODO Auto-generated constructor stub
+	}
+	
+}

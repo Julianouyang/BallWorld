@@ -1,0 +1,107 @@
+package model;
+
+import util.Dispatcher;
+import util.IDispatcher;
+
+/**
+ * An interface that defines a factory that instantiates
+ * a specific IUpdateStrategy
+ */
+public interface IUpdateStrategyFac<TDispMsg> {
+	/**
+	   * Instantiate the specific IUpdateStrategy for which this factory is defined.
+	   * @return An IUpdateStrategy instance.
+	   */
+	public IUpdateStrategy<TDispMsg> make();
+
+	/**
+	 * The default strategy factory
+	 */
+//	public static final IUpdateStrategyFac NULL_OBJECT = new IUpdateStrategyFac() {
+//		/**
+//		 * return a null ball when make
+//		 * @see model.IUpdateStrategyFac#make()
+//		 */
+//		public IUpdateStrategy make() {
+//			return null;
+//		}
+//	};
+
+	/**
+	 * A factory for a beeping error strategy that beeps the speaker every 25 updates.
+	 * Either use the _errorStrategyFac variable directly if you need a factory that makes an error strategy,
+	 * or call _errorStrategyFac.make() to create an instance of a beeping error strategy.
+	 */
+//	public static final IUpdateStrategyFac<TDispMsg> errorStrategyFac = new IUpdateStrategyFac<TDispMsg>() {
+//		@Override
+//		/**
+//		 * Make the beeping error strategy
+//		 * @return  An instance of a beeping error strategy
+//		 */
+//		public IUpdateStrategy<> make() {
+//			return new IUpdateStrategy() {
+//				private int count = 0; // update counter
+//
+//				@Override
+//				/**
+//				 * Beep the speaker every 25 updates
+//				 */
+//				public void updateState(Ball context, Dispatcher dispatcher) {
+//					if (25 < count++) {
+//						java.awt.Toolkit.getDefaultToolkit().beep();
+//						count = 0;
+//					}
+//				}
+//			};
+//		}
+//	};
+	
+	public static final class NullFactory<TDispMsg> implements IUpdateStrategyFac<TDispMsg>{
+
+		@Override
+		public IUpdateStrategy<TDispMsg> make() {
+			// TODO Auto-generated method stub
+			return new IUpdateStrategy<TDispMsg>() {
+
+				@Override
+				public void init(Ball context) {
+					// TODO Auto-generated method stub
+					
+				}
+
+				@Override
+				public void updateState(Ball context, IDispatcher<TDispMsg> dispatcher) {
+					// TODO Auto-generated method stub
+					
+				}
+				
+			};
+		}
+	
+		public  IUpdateStrategyFac<TDispMsg> makeFactory(){
+			return new IUpdateStrategyFac<TDispMsg>() {
+
+				@Override
+				public IUpdateStrategy<TDispMsg> make() {
+					// TODO Auto-generated method stub
+					return new IUpdateStrategy<TDispMsg>() {
+
+						@Override
+						public void init(Ball context) {
+							// TODO Auto-generated method stub
+							
+						}
+
+						@Override
+						public void updateState(Ball context, IDispatcher<TDispMsg> dispatcher) {
+							// TODO Auto-generated method stub
+							
+						}
+						
+					};
+				}
+				
+			};
+		}
+	}
+}

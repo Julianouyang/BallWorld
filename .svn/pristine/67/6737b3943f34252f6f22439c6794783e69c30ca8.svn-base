@@ -1,0 +1,27 @@
+package model.strategy.interact;
+
+import model.Ball;
+import model.IBallCmd;
+import util.IDispatcher;
+
+public class MultiInteractStrategy implements IInteractStrategy {
+	
+	private IInteractStrategy i1;
+	private IInteractStrategy i2;
+	
+	public MultiInteractStrategy(IInteractStrategy i1, IInteractStrategy i2){
+		this.i1 = i1;
+		this.i2 = i2;
+	}
+
+	@Override
+	public void interact(Ball context, Ball target, IDispatcher<IBallCmd> disp) {
+		// TODO Auto-generated method stub
+		i1.interact(context, target, disp);
+//		System.out.println("first interact");
+		i2.interact(context, target, disp);
+//		System.out.println("second interact");
+
+	}
+
+}

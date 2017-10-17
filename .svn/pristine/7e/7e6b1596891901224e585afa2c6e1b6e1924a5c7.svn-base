@@ -1,0 +1,27 @@
+package model.strategy;
+
+import model.*;
+import util.IDispatcher;
+
+/**
+ * The straight strategy class.
+ */
+public class Straight<TDispMsg> implements IUpdateStrategy<TDispMsg> {
+
+	/**
+	 * Change nothing to the ball, continue move straight.
+	 */
+
+	@Override
+	public void init(Ball context) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateState(Ball context, IDispatcher<TDispMsg> dispatcher) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

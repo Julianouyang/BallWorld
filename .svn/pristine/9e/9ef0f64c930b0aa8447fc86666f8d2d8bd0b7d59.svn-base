@@ -1,0 +1,21 @@
+package strategy;
+
+import util.Dispatcher;
+import util.Randomizer;
+import model.*;
+
+/**
+ * The color changing strategy class.
+ */
+public class Color implements IUpdateStrategy {
+
+	/**
+	 * Change the color of the ball to a random value
+	 * @see ball.IUpdateStrategy#updateState(ball.Ball)
+	 */
+	@Override
+	public void updateState(Ball context, Dispatcher dispatcher) {
+		context.setColor(Randomizer.Singleton.randomColor());
+	}
+
+}

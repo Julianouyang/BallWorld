@@ -1,0 +1,24 @@
+package strategy;
+
+import java.awt.Rectangle;
+
+import util.Dispatcher;
+import util.Randomizer;
+
+import model.*;
+
+/**
+ * The wander strategy class.
+ */
+public class Wander implements IUpdateStrategy {
+
+	/**
+	 * Change the velocity of the ball to a random value
+	 * @see ball.IUpdateStrategy#updateState(ball.Ball)
+	 */
+	@Override
+	public void updateState(Ball context, Dispatcher dispatcher) {
+		context.setVelocity(Randomizer.Singleton.randomVel(new Rectangle(3, 3)));
+	}
+
+}

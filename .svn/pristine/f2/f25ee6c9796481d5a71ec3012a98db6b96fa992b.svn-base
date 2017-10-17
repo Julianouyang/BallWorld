@@ -1,0 +1,56 @@
+package model;
+
+import util.Dispatcher;
+import util.IDispatcher;
+
+/**
+ * The strategy update interface.
+ */
+public interface IUpdateStrategy<TDispMsg> {
+	
+	public void init(Ball context);
+	
+	/**
+	 * Update the strategy of the ball
+	 * @param context the ball of strategy to be changed
+	 */
+//	public abstract void updateState(Ball context, Dispatcher dispatcher);
+	
+	public abstract void updateState(Ball context, IDispatcher<TDispMsg> dispatcher);
+
+	/**
+	 * The default strategy
+	 */
+//	public static final IUpdateStrategy NULL_OBJECT = new IUpdateStrategy() {
+//		/**
+//		 * Nothing to do when update strategy
+//		 * @see ball.IUpdateStrategy#updateState(ball.Ball)
+//		 */
+//		public void updateState(Ball context, Dispatcher dispatcher) {
+//		}
+//	};
+
+	public static final class NullFactory<TDispMsg> implements IUpdateStrategyFac<TDispMsg>{
+
+		@Override
+		public IUpdateStrategy<TDispMsg> make() {
+			// TODO Auto-generated method stub
+			return new IUpdateStrategy<TDispMsg>() {
+
+				@Override
+				public void init(Ball context) {
+					// TODO Auto-generated method stub
+					
+				}
+
+				@Override
+				public void updateState(Ball context, IDispatcher<TDispMsg> dispatcher) {
+					// TODO Auto-generated method stub
+					
+				}
+				
+			};
+		}
+		
+	}
+}

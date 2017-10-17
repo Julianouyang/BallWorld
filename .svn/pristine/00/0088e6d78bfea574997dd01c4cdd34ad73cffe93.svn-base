@@ -1,0 +1,26 @@
+package model;
+
+import util.Dispatcher;
+
+/**
+ * The strategy update interface.
+ */
+public interface IUpdateStrategy {
+	/**
+	 * Update the strategy of the ball
+	 * @param context the ball of strategy to be changed
+	 */
+	public abstract void updateState(Ball context, Dispatcher dispatcher);
+
+	/**
+	 * The default strategy
+	 */
+	public static final IUpdateStrategy NULL_OBJECT = new IUpdateStrategy() {
+		/**
+		 * Nothing to do when update strategy
+		 * @see ball.IUpdateStrategy#updateState(ball.Ball)
+		 */
+		public void updateState(Ball context, Dispatcher dispatcher) {
+		}
+	};
+}

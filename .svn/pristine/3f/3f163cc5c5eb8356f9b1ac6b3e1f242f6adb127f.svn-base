@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_bUfbYKmQEee8ztBkJzmR_Q" name="HW053">
+    <eAnnotations xmi:id="_bdOgoKmQEee8ztBkJzmR_Q" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_bdPHsKmQEee8ztBkJzmR_Q" source="codegen">
+        <details xmi:id="_bdPHsamQEee8ztBkJzmR_Q" key="codegenDirectory" value="/HW05/src"/>
+        <details xmi:id="_cI5T0KmQEee8ztBkJzmR_Q" key="AssociatedSourceCode" value="/HW05/src/model/IPaintStrategy.java;4118501588/1;/HW05/src/model/IPaintStrategyFac.java;3224487817/1;/HW05/src/model/paint/ADecoratorPaintStrategy.java;3315370691/1;/HW05/src/model/paint/APaintStrategy.java;3581857129/1;/HW05/src/model/paint/FixedColorDecoratorPaintStrategy.java;382708883/1;/HW05/src/model/paint/ImagePaintStrategy.java;1561928137/1;/HW05/src/model/paint/MultiPaintStrategy.java;3247520335/1;/HW05/src/model/paint/ShapePaintStrategy.java;2248069186/1;/HW05/src/model/paint/paintStrategy/BallPaint.java;1897140219/1;/HW05/src/model/paint/paintStrategy/Ellipse.java;4135553439/1;/HW05/src/model/paint/paintStrategy/Fish.java;984590575/1;/HW05/src/model/paint/paintStrategy/NiceFish.java;1826737364/1;/HW05/src/model/paint/paintStrategy/PlanetImage.java;371143684/1;/HW05/src/model/paint/paintStrategy/SoccerImage.java;1634685694/1;/HW05/src/model/paint/paintStrategy/Square.java;2920185486/1;/HW05/src/model/paint/shape/EllipseShapeFactory.java;1116745204/1;/HW05/src/model/paint/shape/FishPolygonFactory.java;1868349963/1;/HW05/src/model/paint/shape/IShapeFactory.java;4193604233/1;/HW05/src/model/paint/shape/PolygonFactory.java;2454778815/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_b-L4oKmQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_b-MfsKmQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_b-MfsamQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_b-MfsqmQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_b-Mfs6mQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_b-MftKmQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_b-MftamQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_b-MftqmQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_b-NGwKmQEee8ztBkJzmR_Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_b-O78KmQEee8ztBkJzmR_Q" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_b-O78amQEee8ztBkJzmR_Q" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_b-SmUKmQEee8ztBkJzmR_Q" name="geom">
+          <packagedElement xmi:type="uml:Class" xmi:id="_cCGIQamQEee8ztBkJzmR_Q" name="AffineTransform"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cCoTwKmQEee8ztBkJzmR_Q" name="Ellipse2D"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_b-bwQKmQEee8ztBkJzmR_Q" name="image">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_cCRHYamQEee8ztBkJzmR_Q" name="ImageObserver"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCDsAKmQEee8ztBkJzmR_Q" name="Graphics"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCM18KmQEee8ztBkJzmR_Q" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCPSMKmQEee8ztBkJzmR_Q" name="Image"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCP5QamQEee8ztBkJzmR_Q" name="MediaTracker"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCQgUamQEee8ztBkJzmR_Q" name="Toolkit"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCZDMKmQEee8ztBkJzmR_Q" name="Graphics2D"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_cCZqQamQEee8ztBkJzmR_Q" name="Shape"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCqwAKmQEee8ztBkJzmR_Q" name="Point"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cCr-IKmQEee8ztBkJzmR_Q" name="Polygon"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_b-QKEKmQEee8ztBkJzmR_Q" name="model">
+      <packagedElement xmi:type="uml:Package" xmi:id="_b-UbgKmQEee8ztBkJzmR_Q" name="paint">
+        <packagedElement xmi:type="uml:Package" xmi:id="_b-okkKmQEee8ztBkJzmR_Q" name="paintStrategy">
+          <packagedElement xmi:type="uml:Class" xmi:id="_b_0QUKmQEee8ztBkJzmR_Q" name="BallPaint">
+            <ownedComment xmi:id="_cDvuFamQEee8ztBkJzmR_Q">
+              <body>Paint strategy that paints a filled circle with the Ball's radius.
+The class demonstrates a direct implementation of IPaintStrategy.
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_cDeoUKmQEee8ztBkJzmR_Q" name="at" visibility="private" type="_cCGIQamQEee8ztBkJzmR_Q" association="_cD9wgamQEee8ztBkJzmR_Q"/>
+            <ownedAttribute xmi:id="_cDfPYKmQEee8ztBkJzmR_Q" name="ball" visibility="private" type="_cCdUoKmQEee8ztBkJzmR_Q" association="_cD-XkamQEee8ztBkJzmR_Q"/>
+            <interfaceRealization xmi:id="_cCctkKmQEee8ztBkJzmR_Q" client="_b_0QUKmQEee8ztBkJzmR_Q" supplier="_b_PokKmQEee8ztBkJzmR_Q" contract="_b_PokKmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDpAYKmQEee8ztBkJzmR_Q" name="BallPaint" specification="_b_03YKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDpAYamQEee8ztBkJzmR_Q" type="_b_0QUKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>//ball = new Ellipse2D.Double(-1, -1, 2, 2);
+		this(new AffineTransform(), 0, 0, 1, 1);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDpAYqmQEee8ztBkJzmR_Q" name="BallPaint" specification="_cDJ4MKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDpAY6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDpAZKmQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDpAZamQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDpAZqmQEee8ztBkJzmR_Q" name="width">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDpAZ6mQEee8ztBkJzmR_Q" name="height">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDpAaKmQEee8ztBkJzmR_Q" type="_b_0QUKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>this.at = at;
+		ball = new Ellipse2D.Double(x - width, y - height, width * 2, height * 2);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDpAaamQEee8ztBkJzmR_Q" name="paint" specification="_cDMUcKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDpAaqmQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDpAa6mQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+              <language>java</language>
+              <body>double scale = host.getRadius();
+		at.setToTranslation(host.getLocation().x, host.getLocation().y);
+		at.scale(scale, scale);
+
+		g.setColor(host.getColor());
+
+		paintXfrm(g, host, at);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDpncKmQEee8ztBkJzmR_Q" name="paintXfrm" specification="_cDM7gKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDpncamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDpncqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDpnc6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <language>java</language>
+              <body>((Graphics2D) g).fill(at.createTransformedShape(ball));
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_b_03YKmQEee8ztBkJzmR_Q" name="BallPaint" method="_cDpAYKmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_b_03YamQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_b_03YqmQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedComment xmi:id="_cDvuFqmQEee8ztBkJzmR_Q">
+                <body>No parameter constructor that creates a 1 pixel radius ball at the origin.</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_b_03Y6mQEee8ztBkJzmR_Q" type="_b_0QUKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDJ4MKmQEee8ztBkJzmR_Q" name="BallPaint" method="_cDpAYqmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cDKfQ6mQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cDKfRKmQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedComment xmi:id="_cDvuF6mQEee8ztBkJzmR_Q">
+                <body>Constructor that allows one to create the prototype ball of arbitrary dimension and location. 
+	 * The AffineTransform is externally supplied.
+	 * @param at The AffineTransform to use for internal calculations
+	 * @param x floating point x-coordinate of center of circle
+	 * @param y floating point y-coordinate of center of circle
+	 * @param width floating point x-radius of the circle (ellipse)
+	 * @param height floating point y-radius of the circle (ellipse)</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_cDJ4MamQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDJ4MqmQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDKfQKmQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDKfQamQEee8ztBkJzmR_Q" name="width">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDKfQqmQEee8ztBkJzmR_Q" name="height">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDKfRamQEee8ztBkJzmR_Q" type="_b_0QUKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDLGUKmQEee8ztBkJzmR_Q" name="init">
+              <ownedParameter xmi:id="_cDLGUamQEee8ztBkJzmR_Q" name="context" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDMUcKmQEee8ztBkJzmR_Q" name="paint" method="_cDpAaamQEee8ztBkJzmR_Q">
+              <ownedComment xmi:id="_cDwVIKmQEee8ztBkJzmR_Q">
+                <body>Paints on the given graphics context using the color, scale and direction provided by the host. 
+	 * @param g The graphics context to draw upon.
+	 * @param host The host ball.</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_cDMUcamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDMUcqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDM7gKmQEee8ztBkJzmR_Q" name="paintXfrm" method="_cDpncKmQEee8ztBkJzmR_Q">
+              <ownedComment xmi:id="_cDwVIamQEee8ztBkJzmR_Q">
+                <body>Paints a transformed circle, as per the given AffineTransform Uses color already set in Graphics context 
+	 * @param g The Graphics context to paint on
+	 * @param host The Ball host
+	 * @param at the AffineTransform to use</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_cDM7gamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDM7gqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDM7g6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_b_5v4KmQEee8ztBkJzmR_Q" name="Ellipse">
+            <ownedComment xmi:id="_cDwVIqmQEee8ztBkJzmR_Q">
+              <body>Paint strategy to paint an ellipse shape
+Simple shape with affine-transform</body>
+            </ownedComment>
+            <generalization xmi:id="_cCg_AKmQEee8ztBkJzmR_Q" general="_b_v-4KmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDqOgKmQEee8ztBkJzmR_Q" name="Ellipse" specification="_b_6W8KmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDqOgamQEee8ztBkJzmR_Q" type="_b_5v4KmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>this(new AffineTransform(), 0, 0, 4.0 / 3.0, 2.0 / 3.0);
+
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDqOgqmQEee8ztBkJzmR_Q" name="Ellipse" specification="_cDOJoKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDqOg6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDqOhKmQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDqOhamQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDqOhqmQEee8ztBkJzmR_Q" name="width">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDqOh6mQEee8ztBkJzmR_Q" name="height">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDqOiKmQEee8ztBkJzmR_Q" type="_b_5v4KmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>super(at, EllipseShapeFactory.Singleton.makeShape(x, y, width, height));
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_b_6W8KmQEee8ztBkJzmR_Q" name="Ellipse" method="_cDqOgKmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_b_6-AKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_b_6-AamQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_b_6-AqmQEee8ztBkJzmR_Q" type="_b_5v4KmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDOJoKmQEee8ztBkJzmR_Q" name="Ellipse" method="_cDqOgqmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cDOwsKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cDOwsamQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cDOJoamQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDOJoqmQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDOJo6mQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDOJpKmQEee8ztBkJzmR_Q" name="width">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDOJpamQEee8ztBkJzmR_Q" name="height">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDOwsqmQEee8ztBkJzmR_Q" type="_b_5v4KmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_b_8MIKmQEee8ztBkJzmR_Q" name="Fish">
+            <ownedComment xmi:id="_cDwVI6mQEee8ztBkJzmR_Q">
+              <body>Paint strategy that paints a fish-shaped Polygon generated by a FishPolyfonFactory.</body>
+            </ownedComment>
+            <generalization xmi:id="_cCg_AamQEee8ztBkJzmR_Q" general="_b_v-4KmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDqOiamQEee8ztBkJzmR_Q" name="Fish" specification="_cDPXwKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDqOiqmQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDqOi6mQEee8ztBkJzmR_Q" type="_b_8MIKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>super(at, (new FishPolygonFactory()).makeShape(0, 0, 1, 1));
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDq1kKmQEee8ztBkJzmR_Q" name="Fish" specification="_b_9aQKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDq1kamQEee8ztBkJzmR_Q" type="_b_8MIKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>this(new AffineTransform());
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_b_9aQKmQEee8ztBkJzmR_Q" name="Fish" method="_cDq1kKmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_b_9aQamQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_b_9aQqmQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_b_9aQ6mQEee8ztBkJzmR_Q" type="_b_8MIKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDPXwKmQEee8ztBkJzmR_Q" name="Fish" method="_cDqOiamQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cDPXwqmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cDPXw6mQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cDPXwamQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDPXxKmQEee8ztBkJzmR_Q" type="_b_8MIKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_b_-BUKmQEee8ztBkJzmR_Q" name="NiceFish">
+            <ownedComment xmi:id="_cDwVJKmQEee8ztBkJzmR_Q">
+              <body>Subclass of MultiPaintStrategy that uses a FishPaintStrategy and an EllipsePaintStrategy to paint a swimming fish shape that has an eye.</body>
+            </ownedComment>
+            <generalization xmi:id="_cClQcKmQEee8ztBkJzmR_Q" general="_b_rGYKmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDq1kqmQEee8ztBkJzmR_Q" name="NiceFish" specification="_b__PcKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDq1k6mQEee8ztBkJzmR_Q" type="_b_-BUKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>this(new AffineTransform());
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDq1lKmQEee8ztBkJzmR_Q" name="NiceFish" specification="_cDP-0KmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDq1lamQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDq1lqmQEee8ztBkJzmR_Q" type="_b_-BUKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>super(at, new FixedColorDecoratorPaintStrategy(Color.gray, new Fish()), new FixedColorDecoratorPaintStrategy(
+				Color.BLACK, new Ellipse(new AffineTransform(), -0.1, 0.1, 4.0 / 30.0, 2.0 / 30.0)));
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDrcoKmQEee8ztBkJzmR_Q" name="paintCfg" specification="_cDQl4KmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDrcoamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDrcoqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+              <language>java</language>
+              <body>super.paintCfg(g, host);
+		if (Math.abs(Math.atan2(host.getVelocity().y, host.getVelocity().x)) > Math.PI / 2.0) {
+
+			this.getAT().scale(1.0, -1.0);
+		}
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_b__PcKmQEee8ztBkJzmR_Q" name="NiceFish" method="_cDq1kqmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_b__PcamQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_b__PcqmQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_b__Pc6mQEee8ztBkJzmR_Q" type="_b_-BUKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDP-0KmQEee8ztBkJzmR_Q" name="NiceFish" method="_cDq1lKmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cDP-0qmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cDP-06mQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cDP-0amQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDP-1KmQEee8ztBkJzmR_Q" type="_b_-BUKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDQl4KmQEee8ztBkJzmR_Q" name="paintCfg" visibility="protected" method="_cDrcoKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDQl4amQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDQl4qmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cABEoKmQEee8ztBkJzmR_Q" name="PlanetImage">
+            <ownedComment xmi:id="_cDwVJamQEee8ztBkJzmR_Q">
+              <body>Paint strategy that upon instantiation, randomly picks one image from an array of images to use.
+ *</body>
+            </ownedComment>
+            <generalization xmi:id="_cCmekKmQEee8ztBkJzmR_Q" general="_b_kYsKmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDrco6mQEee8ztBkJzmR_Q" name="PlanetImage" specification="_cABEoamQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDrcpKmQEee8ztBkJzmR_Q" type="_cABEoKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>super(&quot;images/Mars.png&quot;, 0.75);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cABEoamQEee8ztBkJzmR_Q" name="PlanetImage" method="_cDrco6mQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cABrsKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cABrsamQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cABrsqmQEee8ztBkJzmR_Q" type="_cABEoKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cACSwKmQEee8ztBkJzmR_Q" name="SoccerImage">
+            <ownedComment xmi:id="_cDwVJqmQEee8ztBkJzmR_Q">
+              <body>Paint strategy that upon instantiation, randomly picks one image from an array of images to use.</body>
+            </ownedComment>
+            <generalization xmi:id="_cCnFoKmQEee8ztBkJzmR_Q" general="_b_kYsKmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDrcpamQEee8ztBkJzmR_Q" name="SoccerImage" specification="_cACSwamQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDrcpqmQEee8ztBkJzmR_Q" type="_cACSwKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>super(&quot;images/FIFA_Soccer_Ball.png&quot;, 0.75);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cACSwamQEee8ztBkJzmR_Q" name="SoccerImage" method="_cDrcpamQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cAC50KmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cAC50amQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cAC50qmQEee8ztBkJzmR_Q" type="_cACSwKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cAC506mQEee8ztBkJzmR_Q" name="Square">
+            <ownedComment xmi:id="_cDwVJ6mQEee8ztBkJzmR_Q">
+              <body>Paint strategy that paints a filled square with the Ball's radius.
+This functionality is duplicated by the RectanglePaintStrategy.
+The class demonstrates a direct implementation of IPaintStrategy.</body>
+            </ownedComment>
+            <interfaceRealization xmi:id="_cCnFoamQEee8ztBkJzmR_Q" client="_cAC506mQEee8ztBkJzmR_Q" supplier="_b_PokKmQEee8ztBkJzmR_Q" contract="_b_PokKmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDsDsKmQEee8ztBkJzmR_Q" name="paint" specification="_cDRM8KmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDsDsamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDsDsqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+              <language>java</language>
+              <body>int halfSide = host.getRadius();
+		g.setColor(host.getColor());
+		g.fillRect(host.getLocation().x - halfSide, host.getLocation().y - halfSide, 2 * halfSide, 2 * halfSide);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cAEH8KmQEee8ztBkJzmR_Q" name="Square">
+              <eAnnotations xmi:id="_cAEH8amQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cAEH8qmQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cAEvAamQEee8ztBkJzmR_Q" type="_cAC506mQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDRM8KmQEee8ztBkJzmR_Q" name="paint" method="_cDsDsKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDRM8amQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDRM8qmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDR0AKmQEee8ztBkJzmR_Q" name="init">
+              <ownedParameter xmi:id="_cDR0AamQEee8ztBkJzmR_Q" name="context" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_cD9wgamQEee8ztBkJzmR_Q" name="" memberEnd="_cD9wgqmQEee8ztBkJzmR_Q _cDeoUKmQEee8ztBkJzmR_Q">
+            <ownedEnd xmi:id="_cD9wgqmQEee8ztBkJzmR_Q" name="" type="_b_0QUKmQEee8ztBkJzmR_Q" association="_cD9wgamQEee8ztBkJzmR_Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_cD-XkamQEee8ztBkJzmR_Q" name="" memberEnd="_cD-XkqmQEee8ztBkJzmR_Q _cDfPYKmQEee8ztBkJzmR_Q">
+            <ownedEnd xmi:id="_cD-XkqmQEee8ztBkJzmR_Q" name="" type="_b_0QUKmQEee8ztBkJzmR_Q" association="_cD-XkamQEee8ztBkJzmR_Q"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_b-qZwKmQEee8ztBkJzmR_Q" name="shape">
+          <packagedElement xmi:type="uml:Class" xmi:id="_cAGkMKmQEee8ztBkJzmR_Q" name="EllipseShapeFactory">
+            <ownedComment xmi:id="_cDwVKKmQEee8ztBkJzmR_Q">
+              <body>Concrete shape factory that instantiates Ellipse2D.Double shapes.
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_cDf2cKmQEee8ztBkJzmR_Q" name="Singleton" isStatic="true" type="_cAGkMKmQEee8ztBkJzmR_Q" association="_cD--oamQEee8ztBkJzmR_Q">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cDf2camQEee8ztBkJzmR_Q" value="new EllipseShapeFactory()"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_cCph4amQEee8ztBkJzmR_Q" client="_cAGkMKmQEee8ztBkJzmR_Q" supplier="_cANR4KmQEee8ztBkJzmR_Q" contract="_cANR4KmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDsDs6mQEee8ztBkJzmR_Q" name="makeShape" specification="_cAJAcKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDsDtKmQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsDtamQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsDtqmQEee8ztBkJzmR_Q" name="xScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsDt6mQEee8ztBkJzmR_Q" name="yScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsDuKmQEee8ztBkJzmR_Q" type="_cCZqQamQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>return new Ellipse2D.Double(x - xScale, y - yScale, 2 * xScale, 2 * yScale);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cAHLQKmQEee8ztBkJzmR_Q" name="EllipseShapeFactory" visibility="private">
+              <eAnnotations xmi:id="_cAHyUKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cAHyUamQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cAIZYamQEee8ztBkJzmR_Q" type="_cAGkMKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cAJAcKmQEee8ztBkJzmR_Q" name="makeShape" method="_cDsDs6mQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cAJAcamQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAJAcqmQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAJAc6mQEee8ztBkJzmR_Q" name="xScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAJAdKmQEee8ztBkJzmR_Q" name="yScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDSbEamQEee8ztBkJzmR_Q" type="_cCZqQamQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cAMDwKmQEee8ztBkJzmR_Q" name="FishPolygonFactory">
+            <ownedComment xmi:id="_cDw8MKmQEee8ztBkJzmR_Q">
+              <body>Concrete PolygonFactory that creates fish-shaped Polygons
+ *</body>
+            </ownedComment>
+            <generalization xmi:id="_cCrXEamQEee8ztBkJzmR_Q" general="_cAPHEKmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDsDuamQEee8ztBkJzmR_Q" name="FishPolygonFactory" specification="_cAMq0KmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDsDuqmQEee8ztBkJzmR_Q" type="_cAMDwKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>super(new AffineTransform(), 1.0 / 10.0, new Point(5, 3), new Point(-5, -3), new Point(-12, 2),
+				new Point(-16, 0), new Point(-16, 4), new Point(-12, 2), new Point(-5, 7), new Point(5, 3));
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cAMq0KmQEee8ztBkJzmR_Q" name="FishPolygonFactory" method="_cDsDuamQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cAMq0amQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cAMq0qmQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cAMq06mQEee8ztBkJzmR_Q" type="_cAMDwKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_cANR4KmQEee8ztBkJzmR_Q" name="IShapeFactory">
+            <ownedComment xmi:id="_cDw8MamQEee8ztBkJzmR_Q">
+              <body>Abstract factory that creates a Shape for use as prototype shapes in IPaintStrategies. 
+The location of the center of the shape and the x and y scales can be specified.
+ *</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_cAN48KmQEee8ztBkJzmR_Q" name="makeShape">
+              <ownedParameter xmi:id="_cAN48amQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAN48qmQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAN486mQEee8ztBkJzmR_Q" name="xScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAN49KmQEee8ztBkJzmR_Q" name="yScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDTCIKmQEee8ztBkJzmR_Q" type="_cCZqQamQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cAPHEKmQEee8ztBkJzmR_Q" name="PolygonFactory">
+            <ownedComment xmi:id="_cDw8MqmQEee8ztBkJzmR_Q">
+              <body>Concrete IShapeFactory that provides the invariant behavior to instantiate a Shape that is a Polygon.
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_cDhEkKmQEee8ztBkJzmR_Q" name="poly" visibility="private" type="_cCr-IKmQEee8ztBkJzmR_Q" association="_cEAMwamQEee8ztBkJzmR_Q">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cDhEkamQEee8ztBkJzmR_Q" value="new Polygon()"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cDhroKmQEee8ztBkJzmR_Q" name="at" visibility="private" type="_cCGIQamQEee8ztBkJzmR_Q" association="_cEBa4KmQEee8ztBkJzmR_Q"/>
+            <ownedAttribute xmi:id="_cDhroqmQEee8ztBkJzmR_Q" name="scaleFactor" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cDiSsKmQEee8ztBkJzmR_Q" value="1.0"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_cCslMKmQEee8ztBkJzmR_Q" client="_cAPHEKmQEee8ztBkJzmR_Q" supplier="_cANR4KmQEee8ztBkJzmR_Q" contract="_cANR4KmQEee8ztBkJzmR_Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDsqwKmQEee8ztBkJzmR_Q" name="PolygonFactory" specification="_cDTpMKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDsqwamQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDsqwqmQEee8ztBkJzmR_Q" name="_scaleFactor">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsqw6mQEee8ztBkJzmR_Q" name="pts" type="_cCqwAKmQEee8ztBkJzmR_Q">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDsqxKmQEee8ztBkJzmR_Q" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsqxamQEee8ztBkJzmR_Q" type="_cAPHEKmQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>at = _at;
+		scaleFactor = _scaleFactor;
+		for (Point point : pts) {
+			poly.addPoint(point.x, point.y);
+		}
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDsqxqmQEee8ztBkJzmR_Q" name="makeShape" specification="_cAQVMKmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cDsqx6mQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsqyKmQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsqyamQEee8ztBkJzmR_Q" name="xScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsqyqmQEee8ztBkJzmR_Q" name="yScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDsqy6mQEee8ztBkJzmR_Q" type="_cCZqQamQEee8ztBkJzmR_Q" direction="return"/>
+              <language>java</language>
+              <body>at.setToTranslation(x, y);
+		at.scale(xScale * scaleFactor, yScale * scaleFactor); // optional rotation can be added as well
+		return at.createTransformedShape(poly);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cAQVMKmQEee8ztBkJzmR_Q" name="makeShape" method="_cDsqxqmQEee8ztBkJzmR_Q">
+              <ownedParameter xmi:id="_cAQ8QKmQEee8ztBkJzmR_Q" name="x">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAQ8QamQEee8ztBkJzmR_Q" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAQ8QqmQEee8ztBkJzmR_Q" name="xScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cAQ8Q6mQEee8ztBkJzmR_Q" name="yScale">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDWFcKmQEee8ztBkJzmR_Q" type="_cCZqQamQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cDTpMKmQEee8ztBkJzmR_Q" name="PolygonFactory" visibility="package" method="_cDsqwKmQEee8ztBkJzmR_Q">
+              <eAnnotations xmi:id="_cDUQQ6mQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cDUQRKmQEee8ztBkJzmR_Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cDUQQKmQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+              <ownedParameter xmi:id="_cDUQQamQEee8ztBkJzmR_Q" name="_scaleFactor">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDUQQqmQEee8ztBkJzmR_Q" name="pts" type="_cCqwAKmQEee8ztBkJzmR_Q">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDU3UqmQEee8ztBkJzmR_Q" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cDU3UamQEee8ztBkJzmR_Q" type="_cAPHEKmQEee8ztBkJzmR_Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_cD--oamQEee8ztBkJzmR_Q" name="" memberEnd="_cD--oqmQEee8ztBkJzmR_Q _cDf2cKmQEee8ztBkJzmR_Q">
+            <ownedEnd xmi:id="_cD--oqmQEee8ztBkJzmR_Q" name="" type="_cAGkMKmQEee8ztBkJzmR_Q" association="_cD--oamQEee8ztBkJzmR_Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_cEAMwamQEee8ztBkJzmR_Q" name="" memberEnd="_cEAMwqmQEee8ztBkJzmR_Q _cDhEkKmQEee8ztBkJzmR_Q">
+            <ownedEnd xmi:id="_cEAMwqmQEee8ztBkJzmR_Q" name="" type="_cAPHEKmQEee8ztBkJzmR_Q" association="_cEAMwamQEee8ztBkJzmR_Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_cEBa4KmQEee8ztBkJzmR_Q" name="" memberEnd="_cEBa4amQEee8ztBkJzmR_Q _cDhroKmQEee8ztBkJzmR_Q">
+            <ownedEnd xmi:id="_cEBa4amQEee8ztBkJzmR_Q" name="" type="_cAPHEKmQEee8ztBkJzmR_Q" association="_cEBa4KmQEee8ztBkJzmR_Q"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b_VvMKmQEee8ztBkJzmR_Q" name="ADecoratorPaintStrategy" isAbstract="true">
+          <ownedComment xmi:id="_cDuf8amQEee8ztBkJzmR_Q">
+            <body>Abstract class that provides default behavior for subclasses that will decorate another IPaintStrategy to add functionality to that strategy. 
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_cCIkgKmQEee8ztBkJzmR_Q" general="_b_bOwKmQEee8ztBkJzmR_Q"/>
+          <ownedAttribute xmi:id="_cDX6oKmQEee8ztBkJzmR_Q" name="decoree" visibility="private" type="_b_bOwKmQEee8ztBkJzmR_Q" association="_cD3C0amQEee8ztBkJzmR_Q"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDjg0KmQEee8ztBkJzmR_Q" name="ADecoratorPaintStrategy" specification="_cCHWYamQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDjg0amQEee8ztBkJzmR_Q" name="_decoree" type="_b_bOwKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDjg0qmQEee8ztBkJzmR_Q" type="_b_VvMKmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>super(new AffineTransform());
+		decoree = _decoree;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDkH4KmQEee8ztBkJzmR_Q" name="paint" specification="_cC2WMKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDkH4amQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDkH4qmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>decoree.paint(g, host);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDkH46mQEee8ztBkJzmR_Q" name="paintXfrm" specification="_cC29QKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDkH5KmQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDkH5amQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDkH5qmQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>decoree.paintXfrm(g, host, at);
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cCHWYamQEee8ztBkJzmR_Q" name="ADecoratorPaintStrategy" method="_cDjg0KmQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cCH9cKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cCH9camQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedComment xmi:id="_cDuf8qmQEee8ztBkJzmR_Q">
+              <body>Constructor that takes the decoree paint strategy
+	 * @param _decoree The paint strategy that is to be decorated</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cCHWYqmQEee8ztBkJzmR_Q" name="_decoree" type="_b_bOwKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cCH9cqmQEee8ztBkJzmR_Q" type="_b_VvMKmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC1IEKmQEee8ztBkJzmR_Q" name="init">
+            <ownedParameter xmi:id="_cC1vIKmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC2WMKmQEee8ztBkJzmR_Q" name="paint" method="_cDkH4KmQEee8ztBkJzmR_Q">
+            <ownedComment xmi:id="_cDuf86mQEee8ztBkJzmR_Q">
+              <body>Default behavior is to simply delegate to the decoree's paint method
+	 * @param g The graphics context which is passed to the decoree
+	 * @param host The host Ball which is passed to the decoree</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cC2WMamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC2WMqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC29QKmQEee8ztBkJzmR_Q" name="paintXfrm" method="_cDkH46mQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cC29QamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC29QqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC29Q6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b_bOwKmQEee8ztBkJzmR_Q" name="APaintStrategy" isAbstract="true">
+          <ownedComment xmi:id="_cDuf9KmQEee8ztBkJzmR_Q">
+            <body>The top-level affine transform-based paint strategy that provides services for its subclasses, plus default behaviors and abstract behaviors.
+ *</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_cDYhsamQEee8ztBkJzmR_Q" name="at" visibility="private" type="_cCGIQamQEee8ztBkJzmR_Q" association="_cD4Q8amQEee8ztBkJzmR_Q"/>
+          <interfaceRealization xmi:id="_cCJyoKmQEee8ztBkJzmR_Q" client="_b_bOwKmQEee8ztBkJzmR_Q" supplier="_b_PokKmQEee8ztBkJzmR_Q" contract="_b_PokKmQEee8ztBkJzmR_Q"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDku8KmQEee8ztBkJzmR_Q" name="APaintStrategy" specification="_cC4ycKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDku8amQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDku8qmQEee8ztBkJzmR_Q" type="_b_bOwKmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>at = _at;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDku86mQEee8ztBkJzmR_Q" name="getAT" specification="_b_cc4KmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDku9KmQEee8ztBkJzmR_Q" type="_cCGIQamQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>return this.at;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDku9amQEee8ztBkJzmR_Q" name="paint" specification="_cC6noKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDku9qmQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDku96mQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>double scale = host.getRadius();
+		at.setToTranslation(host.getLocation().x, host.getLocation().y);
+		at.scale(scale, scale);
+		at.rotate(host.getVelocity().x, host.getVelocity().y);
+		g.setColor(host.getColor());
+		paintCfg(g, host);
+		paintXfrm(g, host, at);
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_b_cc4KmQEee8ztBkJzmR_Q" name="getAT" visibility="protected" method="_cDku86mQEee8ztBkJzmR_Q">
+            <ownedComment xmi:id="_cDuf9qmQEee8ztBkJzmR_Q">
+              <body>Protected accessor for the internal affine transform
+	 * @return This instance's affine transform</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cCJyoamQEee8ztBkJzmR_Q" type="_cCGIQamQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC4ycKmQEee8ztBkJzmR_Q" name="APaintStrategy" method="_cDku8KmQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cC5ZgKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cC5ZgamQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedComment xmi:id="_cDuf9amQEee8ztBkJzmR_Q">
+              <body>Constructor that initializes the strategy with an affine transform
+	 * @param _at The AffineTransform for this paint strategy to use.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cC4ycamQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC5ZgqmQEee8ztBkJzmR_Q" type="_b_bOwKmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC5Zg6mQEee8ztBkJzmR_Q" name="init">
+            <ownedParameter xmi:id="_cC6AkKmQEee8ztBkJzmR_Q" name="context" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC6noKmQEee8ztBkJzmR_Q" name="paint" method="_cDku9amQEee8ztBkJzmR_Q">
+            <ownedComment xmi:id="_cDvHAKmQEee8ztBkJzmR_Q">
+              <body>Paints on the given graphics context using the color, scale and direction provided by the host.
+	 * @param g The Graphics context that will be paint on
+	 * @param host The host Ball that the required information will be pulled from.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cC6noamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC6noqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC7OsKmQEee8ztBkJzmR_Q" name="paintCfg" visibility="protected">
+            <ownedParameter xmi:id="_cC71wKmQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC71wamQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC8c0KmQEee8ztBkJzmR_Q" name="paintXfrm" isAbstract="true">
+            <ownedComment xmi:id="_cDvHAamQEee8ztBkJzmR_Q">
+              <body>Paints the host onto the given Graphics context. The image is translated, scaled and rotated as determined by the given affine transformation. 
+	 * This method is intended to be called either by a class's (or superclass's) own paint method or by another paint strategy who is sharing the affine transform. 
+	 * This allows the same transformation to be shared amongst multiple paint strategies.
+	 * @param g The graphics context to draw upon.
+	 * @param host The host ball.
+	 * @param at The affine transform to use.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cC8c0amQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC8c0qmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC8c06mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b_hVYKmQEee8ztBkJzmR_Q" name="FixedColorDecoratorPaintStrategy">
+          <ownedComment xmi:id="_cDvHAqmQEee8ztBkJzmR_Q">
+            <body>Decorator paint strategy that decorates another IPaintStrategy and causes the painted color to always be a specified, fixed color. 
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_cCOrIKmQEee8ztBkJzmR_Q" general="_b_VvMKmQEee8ztBkJzmR_Q"/>
+          <ownedAttribute xmi:id="_cDZIwamQEee8ztBkJzmR_Q" name="color" visibility="private" type="_cCM18KmQEee8ztBkJzmR_Q" association="_cD5fEKmQEee8ztBkJzmR_Q"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDlWAKmQEee8ztBkJzmR_Q" name="FixedColorDecoratorPaintStrategy" specification="_cC9q8KmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDlWAamQEee8ztBkJzmR_Q" name="color" type="_cCM18KmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDlWAqmQEee8ztBkJzmR_Q" name="decoree" type="_b_bOwKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDlWA6mQEee8ztBkJzmR_Q" type="_b_hVYKmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>super(decoree);
+		this.color = color;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDlWBKmQEee8ztBkJzmR_Q" name="paintXfrm" specification="_cC-SAKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDlWBamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDlWBqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDlWB6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>g.setColor(color);
+		super.paintXfrm(g, host, at);
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cC9q8KmQEee8ztBkJzmR_Q" name="FixedColorDecoratorPaintStrategy" method="_cDlWAKmQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cC9q86mQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cC9q9KmQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedComment xmi:id="_cDvHA6mQEee8ztBkJzmR_Q">
+              <body>Constructor that takes the fixed color and the decoree strategy
+	 * @param color The fixed color to use
+	 * @param decoree The decoree strategy whose color is overridden</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cC9q8amQEee8ztBkJzmR_Q" name="color" type="_cCM18KmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC9q8qmQEee8ztBkJzmR_Q" name="decoree" type="_b_bOwKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC9q9amQEee8ztBkJzmR_Q" type="_b_hVYKmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC-SAKmQEee8ztBkJzmR_Q" name="paintXfrm" method="_cDlWBKmQEee8ztBkJzmR_Q">
+            <ownedComment xmi:id="_cDvHBKmQEee8ztBkJzmR_Q">
+              <body>Default behavior is to simply delegate to the decoree's paintXfrm method
+	 * @param g The graphics context which is passed to the decoree
+	 * @param host The host Ball which is passed to the decoree.
+	 * @param at The affine transform which is passed to the decoree.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cC-SAamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC-SAqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC-SA6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b_kYsKmQEee8ztBkJzmR_Q" name="ImagePaintStrategy">
+          <ownedComment xmi:id="_cDvHBamQEee8ztBkJzmR_Q">
+            <body>Paint strategy that paints an image from a file, scaled to the host Ball's radius. 
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_cCS8kKmQEee8ztBkJzmR_Q" general="_b_bOwKmQEee8ztBkJzmR_Q"/>
+          <ownedAttribute xmi:id="_cDZv0amQEee8ztBkJzmR_Q" name="fillFactor" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cDaW4amQEee8ztBkJzmR_Q" name="image" visibility="private" type="_cCPSMKmQEee8ztBkJzmR_Q" association="_cD6GIamQEee8ztBkJzmR_Q"/>
+          <ownedAttribute xmi:id="_cDa98KmQEee8ztBkJzmR_Q" name="imageObs" visibility="private" type="_cCRHYamQEee8ztBkJzmR_Q" association="_cD6tMamQEee8ztBkJzmR_Q"/>
+          <ownedAttribute xmi:id="_cDa98qmQEee8ztBkJzmR_Q" name="localAT" visibility="protected" type="_cCGIQamQEee8ztBkJzmR_Q" association="_cD7UQamQEee8ztBkJzmR_Q">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_cDa986mQEee8ztBkJzmR_Q" value="new AffineTransform()"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cDblAamQEee8ztBkJzmR_Q" name="scaleFactor" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cDcMEamQEee8ztBkJzmR_Q" name="tempAT" visibility="protected" type="_cCGIQamQEee8ztBkJzmR_Q" association="_cD77UamQEee8ztBkJzmR_Q"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDl9EKmQEee8ztBkJzmR_Q" name="ImagePaintStrategy" specification="_cC_gIKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDl9EamQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDl9EqmQEee8ztBkJzmR_Q" name="_filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDl9E6mQEee8ztBkJzmR_Q" name="_fillFactor">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDl9FKmQEee8ztBkJzmR_Q" type="_b_kYsKmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>super(_at);
+
+		fillFactor = _fillFactor;
+
+		try {
+			image = Toolkit.getDefaultToolkit().getImage(this.getClass().getResource(_filename));
+		} catch (Exception e) {
+			System.err.println(&quot;ImagePaintStrategy: Error reading file: &quot; + _filename + &quot;\n&quot; + e);
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDl9FamQEee8ztBkJzmR_Q" name="ImagePaintStrategy" specification="_b_mN4KmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDl9FqmQEee8ztBkJzmR_Q" name="_filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDl9F6mQEee8ztBkJzmR_Q" name="_fillFactor">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDl9GKmQEee8ztBkJzmR_Q" type="_b_kYsKmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>this(new AffineTransform(), _filename, _fillFactor);
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDmkIKmQEee8ztBkJzmR_Q" name="init" specification="_cDAHMqmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDmkIamQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>imageObs = host.getContainer();
+
+		MediaTracker mt = new MediaTracker(host.getContainer());
+		mt.addImage(image, 1);
+		try {
+			mt.waitForAll();
+		} catch (Exception e) {
+			System.out.println(&quot;ImagePaintStrategy.init(): Error waiting for image.  Exception = &quot; + e);
+		}
+
+		scaleFactor = 2.0 / (fillFactor * (image.getWidth(imageObs) + image.getHeight(imageObs)) / 2.0);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDmkIqmQEee8ztBkJzmR_Q" name="paintXfrm" specification="_cDAuQKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDmkI6mQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDmkJKmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDmkJamQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>localAT.setToScale(scaleFactor, scaleFactor);
+		localAT.translate(-image.getWidth(imageObs) / 2.0, -image.getHeight(imageObs) / 2.0);
+		localAT.preConcatenate(at);
+		((Graphics2D) g).drawImage(image, localAT, imageObs);
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_b_mN4KmQEee8ztBkJzmR_Q" name="ImagePaintStrategy" method="_cDl9FamQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_b_m08amQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_b_m08qmQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedComment xmi:id="_cDvHB6mQEee8ztBkJzmR_Q">
+              <body>Constructor that takes the image filename and fill factor. 
+	 * @param _filename The filename of the image file to use.
+	 * @param _fillFactor The ratio of the desired average radius of the image to the actual average of the image's width and height.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_b_mN4amQEee8ztBkJzmR_Q" name="_filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_b_m08KmQEee8ztBkJzmR_Q" name="_fillFactor">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_b_m086mQEee8ztBkJzmR_Q" type="_b_kYsKmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cC_gIKmQEee8ztBkJzmR_Q" name="ImagePaintStrategy" method="_cDl9EKmQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cC_gJKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cDAHMKmQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedComment xmi:id="_cDvHBqmQEee8ztBkJzmR_Q">
+              <body>Constructor that takes an external AffineTransform, the filename of the image to paint and a fill factor of the image.
+	 * @param _at The AffineTransform to use internally.
+	 * @param _filename The filename of the image file to use.
+	 * @param _fillFactor The ratio of the desired average diameter of the image to the actual average of the image's width and height.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cC_gIamQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cC_gIqmQEee8ztBkJzmR_Q" name="_filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cC_gI6mQEee8ztBkJzmR_Q" name="_fillFactor">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDAHMamQEee8ztBkJzmR_Q" type="_b_kYsKmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cDAHMqmQEee8ztBkJzmR_Q" name="init" method="_cDmkIKmQEee8ztBkJzmR_Q">
+            <ownedComment xmi:id="_cDvHCKmQEee8ztBkJzmR_Q">
+              <body>Initializes the internal ImageObserver reference from the host Ball Also calculates the net scale factor for the image.
+	 * @param host The host Ball</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cDAHM6mQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cDAuQKmQEee8ztBkJzmR_Q" name="paintXfrm" method="_cDmkIqmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDAuQamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDBVUKmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDBVUamQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b_rGYKmQEee8ztBkJzmR_Q" name="MultiPaintStrategy" isAbstract="true">
+          <ownedComment xmi:id="_cDvuEKmQEee8ztBkJzmR_Q">
+            <body>A composite design pattern extension of APaintStrategy that paints a set of paint strategies.
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_cCX1EKmQEee8ztBkJzmR_Q" general="_b_bOwKmQEee8ztBkJzmR_Q"/>
+          <ownedAttribute xmi:id="_cDczIKmQEee8ztBkJzmR_Q" name="pstrats" visibility="private" type="_b_bOwKmQEee8ztBkJzmR_Q" association="_cD8iYamQEee8ztBkJzmR_Q">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDczIamQEee8ztBkJzmR_Q" value="*"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDnLMKmQEee8ztBkJzmR_Q" name="MultiPaintStrategy" specification="_cDDKgKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDnLMamQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDnLMqmQEee8ztBkJzmR_Q" name="_pstrats" type="_b_bOwKmQEee8ztBkJzmR_Q">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDnLM6mQEee8ztBkJzmR_Q" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDnLNKmQEee8ztBkJzmR_Q" type="_b_rGYKmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>super(_at);
+		pstrats = _pstrats;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDnLNamQEee8ztBkJzmR_Q" name="MultiPaintStrategy" specification="_cCVY0KmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDnLNqmQEee8ztBkJzmR_Q" name="_pstrats" type="_b_bOwKmQEee8ztBkJzmR_Q">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDnLN6mQEee8ztBkJzmR_Q" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDnLOKmQEee8ztBkJzmR_Q" type="_b_rGYKmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>this(new AffineTransform(), _pstrats);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDnyQKmQEee8ztBkJzmR_Q" name="paintXfrm" specification="_cDFmwKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDnyQamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDnyQqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDnyQ6mQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>for (APaintStrategy ps : pstrats) {
+			ps.paintXfrm(g, host, at);
+		}
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cCVY0KmQEee8ztBkJzmR_Q" name="MultiPaintStrategy" method="_cDnLNamQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cCV_4amQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cCV_4qmQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cCV_4KmQEee8ztBkJzmR_Q" name="_pstrats" type="_b_bOwKmQEee8ztBkJzmR_Q">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cCWm8qmQEee8ztBkJzmR_Q" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cCWm8amQEee8ztBkJzmR_Q" type="_b_rGYKmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cDDKgKmQEee8ztBkJzmR_Q" name="MultiPaintStrategy" method="_cDnLMKmQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cDDxkKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cDDxkamQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cDDKgamQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDDKgqmQEee8ztBkJzmR_Q" name="_pstrats" type="_b_bOwKmQEee8ztBkJzmR_Q">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDEYoKmQEee8ztBkJzmR_Q" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDDxk6mQEee8ztBkJzmR_Q" type="_b_rGYKmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cDE_sKmQEee8ztBkJzmR_Q" name="init">
+            <ownedParameter xmi:id="_cDE_samQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cDFmwKmQEee8ztBkJzmR_Q" name="paintXfrm" method="_cDnyQKmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDGN0KmQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDGN0amQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDGN0qmQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b_v-4KmQEee8ztBkJzmR_Q" name="ShapePaintStrategy">
+          <ownedComment xmi:id="_cDvuEamQEee8ztBkJzmR_Q">
+            <body>Concrete class that defines invariant painting behaviors to paint Shape objects for all its subclasses. 
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_cCbfcKmQEee8ztBkJzmR_Q" general="_b_bOwKmQEee8ztBkJzmR_Q"/>
+          <ownedAttribute xmi:id="_cDeBQKmQEee8ztBkJzmR_Q" name="shape" visibility="private" type="_cCZqQamQEee8ztBkJzmR_Q" association="_cD9JcamQEee8ztBkJzmR_Q"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDoZUKmQEee8ztBkJzmR_Q" name="ShapePaintStrategy" specification="_cDHb8KmQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDoZUamQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDoZUqmQEee8ztBkJzmR_Q" name="_shape" type="_cCZqQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDoZU6mQEee8ztBkJzmR_Q" type="_b_v-4KmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>super(_at);
+		shape = _shape;
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDoZVKmQEee8ztBkJzmR_Q" name="ShapePaintStrategy" specification="_cDIDA6mQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDoZVamQEee8ztBkJzmR_Q" name="_shape" type="_cCZqQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDoZVqmQEee8ztBkJzmR_Q" type="_b_v-4KmQEee8ztBkJzmR_Q" direction="return"/>
+            <language>java</language>
+            <body>this(new AffineTransform(), _shape);
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cDoZV6mQEee8ztBkJzmR_Q" name="paintXfrm" specification="_cDIqE6mQEee8ztBkJzmR_Q">
+            <ownedParameter xmi:id="_cDoZWKmQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDoZWamQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDoZWqmQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <language>java</language>
+            <body>((Graphics2D) g).fill(at.createTransformedShape(shape));
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cDHb8KmQEee8ztBkJzmR_Q" name="ShapePaintStrategy" method="_cDoZUKmQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cDIDAKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cDIDAamQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedComment xmi:id="_cDvuEqmQEee8ztBkJzmR_Q">
+              <body>Constructor that uses a supplied AffineTransform for internal use.
+	 * @param _at The AffineTransform to use
+	 * @param _shape The Shape to be painted.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cDHb8amQEee8ztBkJzmR_Q" name="_at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDHb8qmQEee8ztBkJzmR_Q" name="_shape" type="_cCZqQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDIDAqmQEee8ztBkJzmR_Q" type="_b_v-4KmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cDIDA6mQEee8ztBkJzmR_Q" name="ShapePaintStrategy" method="_cDoZVKmQEee8ztBkJzmR_Q">
+            <eAnnotations xmi:id="_cDIqEKmQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cDIqEamQEee8ztBkJzmR_Q" key="create"/>
+            </eAnnotations>
+            <ownedComment xmi:id="_cDvuE6mQEee8ztBkJzmR_Q">
+              <body>Constructor that allocates a new AffineTransform for internal use.
+	 * @param _shape The Shape to be painted.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cDIDBKmQEee8ztBkJzmR_Q" name="_shape" type="_cCZqQamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDIqEqmQEee8ztBkJzmR_Q" type="_b_v-4KmQEee8ztBkJzmR_Q" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cDIqE6mQEee8ztBkJzmR_Q" name="paintXfrm" method="_cDoZV6mQEee8ztBkJzmR_Q">
+            <ownedComment xmi:id="_cDvuFKmQEee8ztBkJzmR_Q">
+              <body>Paints the shape on the given Graphics context using the supplied AffineTransform. 
+	 * @param g The Graphics context to paint upon.
+	 * @param host The Graphics context to paint upon.
+	 * @param at The AffineTransform to use</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_cDIqFKmQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDJRIKmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+            <ownedParameter xmi:id="_cDJRIamQEee8ztBkJzmR_Q" name="at" type="_cCGIQamQEee8ztBkJzmR_Q"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD3C0amQEee8ztBkJzmR_Q" name="" memberEnd="_cD3C0qmQEee8ztBkJzmR_Q _cDX6oKmQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD3C0qmQEee8ztBkJzmR_Q" name="" type="_b_VvMKmQEee8ztBkJzmR_Q" association="_cD3C0amQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD4Q8amQEee8ztBkJzmR_Q" name="" memberEnd="_cD4Q8qmQEee8ztBkJzmR_Q _cDYhsamQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD4Q8qmQEee8ztBkJzmR_Q" name="" type="_b_bOwKmQEee8ztBkJzmR_Q" association="_cD4Q8amQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD5fEKmQEee8ztBkJzmR_Q" name="" memberEnd="_cD5fEamQEee8ztBkJzmR_Q _cDZIwamQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD5fEamQEee8ztBkJzmR_Q" name="" type="_b_hVYKmQEee8ztBkJzmR_Q" association="_cD5fEKmQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD6GIamQEee8ztBkJzmR_Q" name="" memberEnd="_cD6GIqmQEee8ztBkJzmR_Q _cDaW4amQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD6GIqmQEee8ztBkJzmR_Q" name="" type="_b_kYsKmQEee8ztBkJzmR_Q" association="_cD6GIamQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD6tMamQEee8ztBkJzmR_Q" name="" memberEnd="_cD6tMqmQEee8ztBkJzmR_Q _cDa98KmQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD6tMqmQEee8ztBkJzmR_Q" name="" type="_b_kYsKmQEee8ztBkJzmR_Q" association="_cD6tMamQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD7UQamQEee8ztBkJzmR_Q" name="" memberEnd="_cD7UQqmQEee8ztBkJzmR_Q _cDa98qmQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD7UQqmQEee8ztBkJzmR_Q" name="" type="_b_kYsKmQEee8ztBkJzmR_Q" association="_cD7UQamQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD77UamQEee8ztBkJzmR_Q" name="" memberEnd="_cD77UqmQEee8ztBkJzmR_Q _cDcMEamQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD77UqmQEee8ztBkJzmR_Q" name="" type="_b_kYsKmQEee8ztBkJzmR_Q" association="_cD77UamQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD8iYamQEee8ztBkJzmR_Q" name="" memberEnd="_cD8iYqmQEee8ztBkJzmR_Q _cDczIKmQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD8iYqmQEee8ztBkJzmR_Q" name="" type="_b_rGYKmQEee8ztBkJzmR_Q" association="_cD8iYamQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cD9JcamQEee8ztBkJzmR_Q" name="" memberEnd="_cD9JcqmQEee8ztBkJzmR_Q _cDeBQKmQEee8ztBkJzmR_Q">
+          <ownedEnd xmi:id="_cD9JcqmQEee8ztBkJzmR_Q" name="" type="_b_v-4KmQEee8ztBkJzmR_Q" association="_cD9JcamQEee8ztBkJzmR_Q"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_b_PokKmQEee8ztBkJzmR_Q" name="IPaintStrategy">
+        <ownedComment xmi:id="_cDt44KmQEee8ztBkJzmR_Q">
+          <body>Top-level interface that represents a strategy used by a Ball when asked to perform variant paint operations. 
+A Ball has only one IPaintStrategy
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_b_RdwKmQEee8ztBkJzmR_Q" name="NULL_OBJECT" isLeaf="true" isStatic="true" type="_b_PokKmQEee8ztBkJzmR_Q" isReadOnly="true" association="_cD10sKmQEee8ztBkJzmR_Q">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_b_RdwamQEee8ztBkJzmR_Q" value="new IPaintStrategy() {&#xA;&#x9;&#x9;public void init(Ball host) {&#xA;&#x9;&#x9;};&#xA;&#xA;&#x9;&#x9;public void paint(Graphics g, Ball host) {&#xA;&#x9;&#x9;};&#xA;&#x9;}"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_cCz58KmQEee8ztBkJzmR_Q" name="init">
+          <ownedParameter xmi:id="_cCz58amQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_cC0hAKmQEee8ztBkJzmR_Q" name="paint">
+          <ownedParameter xmi:id="_cC0hAamQEee8ztBkJzmR_Q" name="g" type="_cCDsAKmQEee8ztBkJzmR_Q"/>
+          <ownedParameter xmi:id="_cC0hAqmQEee8ztBkJzmR_Q" name="host" type="_cCGvUamQEee8ztBkJzmR_Q"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_b_TS8KmQEee8ztBkJzmR_Q" name="IPaintStrategyFac">
+        <ownedComment xmi:id="_cDt44amQEee8ztBkJzmR_Q">
+          <body>An interface that defines a factory that instantiates a specific IUpdateStrategy
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_b_UhEKmQEee8ztBkJzmR_Q" name="NULL_OBJECT" isLeaf="true" isStatic="true" type="_b_TS8KmQEee8ztBkJzmR_Q" isReadOnly="true" association="_cD2bwamQEee8ztBkJzmR_Q">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_b_VIIKmQEee8ztBkJzmR_Q" value="new IPaintStrategyFac() {&#xA;&#x9;&#x9;public IPaintStrategy make() {&#xA;&#x9;&#x9;&#x9;return null;&#xA;&#x9;&#x9;}&#xA;&#x9;}"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_b_T6AKmQEee8ztBkJzmR_Q" name="make">
+          <ownedComment xmi:id="_cDuf8KmQEee8ztBkJzmR_Q">
+            <body>Instantiate the specific IUpdateStrategy for which this factory is defined.
+	 * @return n IUpdateStrategy instance.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_cCGIQKmQEee8ztBkJzmR_Q" type="_b_PokKmQEee8ztBkJzmR_Q" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cCGvUamQEee8ztBkJzmR_Q" name="Ball"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cD10sKmQEee8ztBkJzmR_Q" name="" memberEnd="_cD10samQEee8ztBkJzmR_Q _b_RdwKmQEee8ztBkJzmR_Q">
+        <ownedEnd xmi:id="_cD10samQEee8ztBkJzmR_Q" name="" type="_b_PokKmQEee8ztBkJzmR_Q" association="_cD10sKmQEee8ztBkJzmR_Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cD2bwamQEee8ztBkJzmR_Q" name="" memberEnd="_cD2bwqmQEee8ztBkJzmR_Q _b_UhEKmQEee8ztBkJzmR_Q">
+        <ownedEnd xmi:id="_cD2bwqmQEee8ztBkJzmR_Q" name="" type="_b_TS8KmQEee8ztBkJzmR_Q" association="_cD2bwamQEee8ztBkJzmR_Q"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_b-mvYKmQEee8ztBkJzmR_Q" name="Ellipse2D">
+      <packagedElement xmi:type="uml:Class" xmi:id="_cCdUoKmQEee8ztBkJzmR_Q" name="Double"/>
+    </packagedElement>
+    <profileApplication xmi:id="_bdPuwKmQEee8ztBkJzmR_Q">
+      <eAnnotations xmi:id="_bdPuwamQEee8ztBkJzmR_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_bdQV0KmQEee8ztBkJzmR_Q" base_Package="_bUfbYKmQEee8ztBkJzmR_Q">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cAEvAKmQEee8ztBkJzmR_Q" base_Element="_cAEH8KmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cAIZYKmQEee8ztBkJzmR_Q" base_Element="_cAHLQKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cAJngKmQEee8ztBkJzmR_Q" base_Element="_cAJAcKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Annotations xmi:id="_cAKOkKmQEee8ztBkJzmR_Q" base_Element="_cAJAcKmQEee8ztBkJzmR_Q">
+    <annotations xmi:id="_cAKOkamQEee8ztBkJzmR_Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cARjUKmQEee8ztBkJzmR_Q" base_Element="_cAQVMKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Annotations xmi:id="_cASKYKmQEee8ztBkJzmR_Q" base_Element="_cAQVMKmQEee8ztBkJzmR_Q">
+    <annotations xmi:id="_cASKYamQEee8ztBkJzmR_Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_cCE6IKmQEee8ztBkJzmR_Q" base_Element="_cCDsAKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCGvUKmQEee8ztBkJzmR_Q" base_Element="_cCGIQamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCHWYKmQEee8ztBkJzmR_Q" base_Element="_cCGvUamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCNdAKmQEee8ztBkJzmR_Q" base_Element="_cCM18KmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCP5QKmQEee8ztBkJzmR_Q" base_Element="_cCPSMKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCQgUKmQEee8ztBkJzmR_Q" base_Element="_cCP5QamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCRHYKmQEee8ztBkJzmR_Q" base_Element="_cCQgUamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCRucKmQEee8ztBkJzmR_Q" base_Element="_cCRHYamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cCWm8KmQEee8ztBkJzmR_Q" base_Element="_cCVY0KmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Array xmi:id="_cCWm86mQEee8ztBkJzmR_Q" base_Element="_cCV_4KmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCZqQKmQEee8ztBkJzmR_Q" base_Element="_cCZDMKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCaRUKmQEee8ztBkJzmR_Q" base_Element="_cCZqQamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCd7sKmQEee8ztBkJzmR_Q" base_Element="_cCdUoKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCph4KmQEee8ztBkJzmR_Q" base_Element="_cCoTwKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCrXEKmQEee8ztBkJzmR_Q" base_Element="_cCqwAKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cCr-IamQEee8ztBkJzmR_Q" base_Element="_cCr-IKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cC1vIamQEee8ztBkJzmR_Q" base_Element="_cC1IEKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cC3kUKmQEee8ztBkJzmR_Q" base_Element="_cC29QKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Annotations xmi:id="_cC4LYKmQEee8ztBkJzmR_Q" base_Element="_cC29QKmQEee8ztBkJzmR_Q">
+    <annotations xmi:id="_cC4LYamQEee8ztBkJzmR_Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cC6AkamQEee8ztBkJzmR_Q" base_Element="_cC5Zg6mQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cC71wqmQEee8ztBkJzmR_Q" base_Element="_cC7OsKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDBVUqmQEee8ztBkJzmR_Q" base_Element="_cDAuQKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Annotations xmi:id="_cDB8YKmQEee8ztBkJzmR_Q" base_Element="_cDAuQKmQEee8ztBkJzmR_Q">
+    <annotations xmi:id="_cDB8YamQEee8ztBkJzmR_Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDDxkqmQEee8ztBkJzmR_Q" base_Element="_cDDKgKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Array xmi:id="_cDEYoamQEee8ztBkJzmR_Q" base_Element="_cDDKgqmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDE_sqmQEee8ztBkJzmR_Q" base_Element="_cDE_sKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDGN06mQEee8ztBkJzmR_Q" base_Element="_cDFmwKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Annotations xmi:id="_cDG04KmQEee8ztBkJzmR_Q" base_Element="_cDFmwKmQEee8ztBkJzmR_Q">
+    <annotations xmi:id="_cDG04amQEee8ztBkJzmR_Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDLtYKmQEee8ztBkJzmR_Q" base_Element="_cDLGUKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDSbEKmQEee8ztBkJzmR_Q" base_Element="_cDR0AKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDU3UKmQEee8ztBkJzmR_Q" base_Element="_cDTpMKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Array xmi:id="_cDVeYKmQEee8ztBkJzmR_Q" dimensions="1" base_Element="_cDUQQqmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDYhsKmQEee8ztBkJzmR_Q" base_Element="_cDX6oKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDZIwKmQEee8ztBkJzmR_Q" base_Element="_cDYhsamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDZv0KmQEee8ztBkJzmR_Q" base_Element="_cDZIwamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDaW4KmQEee8ztBkJzmR_Q" base_Element="_cDZv0amQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDaW4qmQEee8ztBkJzmR_Q" base_Element="_cDaW4amQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDa98amQEee8ztBkJzmR_Q" base_Element="_cDa98KmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDblAKmQEee8ztBkJzmR_Q" base_Element="_cDa98qmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDcMEKmQEee8ztBkJzmR_Q" base_Element="_cDblAamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDcMEqmQEee8ztBkJzmR_Q" base_Element="_cDcMEamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Array xmi:id="_cDdaMKmQEee8ztBkJzmR_Q" base_Element="_cDczIKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDdaMamQEee8ztBkJzmR_Q" base_Element="_cDczIKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDeBQamQEee8ztBkJzmR_Q" base_Element="_cDeBQKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDeoUamQEee8ztBkJzmR_Q" base_Element="_cDeoUKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDfPYamQEee8ztBkJzmR_Q" base_Element="_cDfPYKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDgdgKmQEee8ztBkJzmR_Q" base_Element="_cDf2cKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDhEkqmQEee8ztBkJzmR_Q" base_Element="_cDhEkKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDhroamQEee8ztBkJzmR_Q" base_Element="_cDhroKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cDiSsamQEee8ztBkJzmR_Q" base_Element="_cDhroqmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD2bwKmQEee8ztBkJzmR_Q" base_Element="_cD10sKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD3C0KmQEee8ztBkJzmR_Q" base_Element="_cD2bwamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD4Q8KmQEee8ztBkJzmR_Q" base_Element="_cD3C0amQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD44AKmQEee8ztBkJzmR_Q" base_Element="_cD4Q8amQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD6GIKmQEee8ztBkJzmR_Q" base_Element="_cD5fEKmQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD6tMKmQEee8ztBkJzmR_Q" base_Element="_cD6GIamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD7UQKmQEee8ztBkJzmR_Q" base_Element="_cD6tMamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD77UKmQEee8ztBkJzmR_Q" base_Element="_cD7UQamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD8iYKmQEee8ztBkJzmR_Q" base_Element="_cD77UamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD9JcKmQEee8ztBkJzmR_Q" base_Element="_cD8iYamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD9wgKmQEee8ztBkJzmR_Q" base_Element="_cD9JcamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD-XkKmQEee8ztBkJzmR_Q" base_Element="_cD9wgamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cD--oKmQEee8ztBkJzmR_Q" base_Element="_cD-XkamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cEAMwKmQEee8ztBkJzmR_Q" base_Element="_cD--oamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cEAz0KmQEee8ztBkJzmR_Q" base_Element="_cEAMwamQEee8ztBkJzmR_Q"/>
+  <UMLLabProfile:Reference xmi:id="_cECB8KmQEee8ztBkJzmR_Q" base_Element="_cEBa4KmQEee8ztBkJzmR_Q"/>
+</xmi:XMI>

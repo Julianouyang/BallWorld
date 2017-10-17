@@ -1,0 +1,13 @@
+package util;
+
+public class SetDispatcherSequential<TDispMsg> extends ASetDispatcher<TDispMsg> {
+
+	@Override
+	public void dispatch(TDispMsg msg) {
+		// TODO Auto-generated method stub
+		getCollection().forEach(o -> {
+			o.update(this, msg);
+		});
+	}
+	
+}

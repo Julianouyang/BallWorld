@@ -1,0 +1,12 @@
+package util;
+
+public interface IDispatcher<TDispMsg> {
+	
+	public void dispatch(TDispMsg msg);
+	
+	public void addObserver(IObserver<TDispMsg> obs);
+	
+	public void deleteObserver(IObserver<TDispMsg> obs);
+	
+	public void deleteObservers();
+}

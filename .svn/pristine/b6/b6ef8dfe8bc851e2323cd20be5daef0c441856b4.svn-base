@@ -1,0 +1,17 @@
+package model.paint.paintStrategy;
+
+import model.paint.ImagePaintStrategy;
+
+/**
+ * Paint strategy that upon instantiation, randomly picks one image from an array of images to use.
+ *
+ */
+public class PlanetImage extends ImagePaintStrategy {
+
+	/**
+	 * Randomly pick one of the image files to use when being constructed.
+	 */
+	public PlanetImage() {
+		super("images/Mars.png", 0.75);
+	}
+}

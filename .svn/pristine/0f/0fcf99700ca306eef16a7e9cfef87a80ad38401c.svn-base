@@ -1,0 +1,28 @@
+package util;
+
+import java.util.Collection;
+
+public abstract class ACollectionDispatcher<TDispMsg> implements IDispatcher<TDispMsg> {
+	private final Collection<IObserver<TDispMsg>> observers;
+	
+	public ACollectionDispatcher(Collection<IObserver<TDispMsg>> observers) {
+		this.observers = observers;
+	}
+	
+	protected Collection<IObserver<TDispMsg>> getCollection() {
+		return observers;
+	}
+	
+	public void addObserver(IObserver<TDispMsg> obs) {
+		observers.add(obs);
+	}
+	
+	public void deleteObserver(IObserver<TDispMsg> obs) {
+		observers.remove(obs);
+	}
+	
+	public void deleteObservers() {
+		observers.clear();
+	}
+
+}

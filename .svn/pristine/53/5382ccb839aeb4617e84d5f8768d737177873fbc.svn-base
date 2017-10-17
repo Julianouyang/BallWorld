@@ -1,0 +1,250 @@
+package model;
+
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Graphics;
+import java.awt.Point;
+import java.util.Observable;
+import java.util.Observer;
+
+import util.Dispatcher;
+import util.IDispatcher;
+import util.IObserver;
+
+/**
+ * The abstract ball class.
+ */
+//public class Ball implements Observer {
+public class Ball implements IObserver<IBallCmd> {
+
+	/**
+	 * the panel of the panel.
+	 */
+	private static Component panel;
+	/**
+	 * the radius of a ball.
+	 */
+	private int radius;
+	/**
+	 * the center of the ball.
+	 */
+	private Point center;
+	/**
+	 * the velocity of the ball.
+	 */
+	private Point velocity;
+	/**
+	 * the color of the ball.
+	 */
+	private Color color;
+	/**
+	 * the strategy of the ball.
+	 */
+	private IUpdateStrategy<IBallCmd> updateStrategy;
+
+	private IPaintStrategy paintStrategy;
+
+	/**
+	 * Constructor
+	 * @param radius the radius of the ball
+	 * @param center the center of the ball
+	 * @param velocity the velocity of the ball
+	 * @param panel the panel to paint the ball
+	 * @param color the color of the ball
+	 * @param strategy the strategy of the ball.
+	 */
+	public Ball(int radius, Point center, Point velocity, Component panel, Color color, IUpdateStrategy<IBallCmd> updateStrategy,
+			IPaintStrategy paintStrategy) {
+		this.radius = radius;
+		this.center = center;
+		this.velocity = velocity;
+		this.color = color;
+		Ball.panel = panel;
+		this.updateStrategy = updateStrategy;
+		setPaintStrategy(paintStrategy);
+	}
+
+	/**
+	 * return color 
+	 * @return color
+	 */
+	public Color getColor() {
+		return this.color;
+	}
+
+	/**
+	 * Accessor for the ball's container Component
+	 * @return ball's container
+	 */
+	public Component getContainer() {
+		return Ball.panel;
+	}
+
+	/**
+	 * Returns the current center of this Ball.
+	 * @return the current center of this Ball
+	 */
+	public Point getLocation() {
+		return this.center;
+	}
+
+	/**
+	 * Returns the current velocity of this Ball.
+	 * @return the current velocity of this Ball.
+	 */
+	public Point getVelocity() {
+		return this.velocity;
+	}
+
+	/**
+	 * Get the radius of the ball
+	 * @return the radius of the ball
+	 */
+	public int getRadius() {
+		return this.radius;
+	}
+
+	/**
+	 * Sets the color of this Ball to a given color.
+	 * @param color the new color for this Ball.
+	 */
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+	/**
+	 * Sets the radius of this Ball to a new radius.
+	 * @param radius the new radius value
+	 */
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+
+	/**
+	 * Sets the velocity of this Ball to a new velocity.
+	 * @param velocity the new velocity for this Ball.
+	 */
+	public void setVelocity(Point velocity) {
+		this.velocity = velocity;
+	}
+
+	/**
+	 * Sets the center to a new location.
+	 * @param location the new center.
+	 */
+	public void setLocation(Point location) {
+		this.center = location;
+	}
+
+	/**
+	 * Get the strategy of the ball
+	 * @return the strategy of the ball.
+	 */
+	public IUpdateStrategy<IBallCmd> getUpdateStrategy() {
+		return this.updateStrategy;
+	}
+
+	/**
+	 * Returns the current paint strategy of this Ball
+	 * @return Returns the current paint strategy of this Ball
+	 */
+	public IPaintStrategy getPaintStrategy() {
+		return this.paintStrategy;
+	}
+
+	/**
+	 * Set the strategy of the ball
+	 * @param _strategy the new strategy of the ball
+	 */
+	public void setUpdateStrategy(IUpdateStrategy<IBallCmd> _strategy) {
+		this.updateStrategy = _strategy;
+	}
+
+	/**
+	 * Sets the current strategy of this Ball to the given strategy
+	 * @param pstrategy The new IPaintStrategy to use.
+	 */
+	public void setPaintStrategy(IPaintStrategy pstrategy) {
+		this.paintStrategy = pstrategy;
+		this.paintStrategy.init(this);
+	}
+
+	/**
+	 * Drawing a ball on the Graphics object.
+	 * @param g The Graphics object to paint on. 
+	 */
+	public void paint(Graphics g) {
+		g.setColor(color);
+		g.fillOval(center.x - radius, center.y - radius, radius * 2, radius * 2);
+
+	}
+
+	/**
+	 * changing the location of the ball as per its velocity.
+	 */
+	protected void move() {
+		center.translate(velocity.x, velocity.y);
+	}
+
+	/**
+	 * correcting the location and velocity of a ball if it has contacted a wall.
+	 */
+	protected void bounce() {
+		// check if hit left wall
+		if (center.x - radius < 0) {
+			center.setLocation(2 * radius - center.x, center.y);
+			velocity.setLocation(-velocity.x, velocity.y);
+		}
+		// check if hit top wall
+		if (center.y - radius < 0) {
+			center.setLocation(center.x, 2 * radius - center.y);
+			velocity.setLocation(velocity.x, -velocity.y);
+		}
+		// check if hit right wall;
+		if (panel.getWidth() - center.x - radius < 0) {
+			center.setLocation(2 * (panel.getWidth() - radius) - center.x, center.y);
+			velocity.setLocation(-velocity.x, velocity.y);
+		}
+		// check if hit bottom wall;
+		if (panel.getHeight() - center.y - radius < 0) {
+			center.setLocation(center.x, 2 * (panel.getHeight() - radius) - center.y);
+			velocity.setLocation(velocity.x, -velocity.y);
+		}
+	}
+
+	/**
+	 * Provided
+	 * The update method called by the main ball Dispatcher to notify all the balls to perform the given command.
+	 * The given command is executed.
+	 * @param o The Dispatcher that sent the update request.
+	 * @param cmd The IBallCmd that will be run.
+	 */
+//	public void update(Observable o, Object cmd) {
+//		((IBallCmd) cmd).apply(this, (Dispatcher) o);
+//	}
+
+	/**
+	 * provided
+	 * Update the state of the ball.   Delegates to the update strategy.
+	 * @param dispatcher The Dispatcher that sent the command that is calling this method.
+	 */
+//	public void updateState(Dispatcher dispatcher) {
+//		updateStrategy.updateState(this, dispatcher); // update this ball's state using the strategy.		
+//	}
+	
+	public void updateState(IDispatcher<IBallCmd> dispatcher) {
+		updateStrategy.updateState(this, dispatcher);
+	}
+
+	public void paintBall(Graphics g) {
+		this.paintStrategy.paint(g, this);
+	}
+
+	@Override
+	public void update(IDispatcher<IBallCmd> dispatcher, IBallCmd cmd) {// need to add something
+		// TODO Auto-generated method stub
+		
+		cmd.apply(this, dispatcher);
+	}
+
+}

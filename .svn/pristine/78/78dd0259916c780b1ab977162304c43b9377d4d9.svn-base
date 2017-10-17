@@ -1,0 +1,39 @@
+package strategy;
+
+import model.*;
+import util.Dispatcher;
+
+/**
+ * The switch strategy class.
+ */
+public class SwitcherStrategy implements IUpdateStrategy {
+
+	/**
+	 * the strategy of switcher, default set to straight
+	 */
+	private IUpdateStrategy strategy = new Straight();
+
+	/**
+	 * make the strategy of ball to the switcher's strategy
+	 */
+	@Override
+	public void updateState(Ball context, Dispatcher dispatcher) {
+		strategy.updateState(context, dispatcher);
+	}
+
+	/**
+	 * Set the strategy of the switcher
+	 * @param _strategy the new strategy of the switcher
+	 */
+	public void setStrategy(IUpdateStrategy _strategy) {
+		strategy = _strategy;
+	}
+
+	/**
+	 * Get the strategy of switcher
+	 * @return the strategy of switcher
+	 */
+	public IUpdateStrategy getStrategy() {
+		return this.strategy;
+	}
+}
